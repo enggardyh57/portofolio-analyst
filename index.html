@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Mercer — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-inner">
+      <a href="#hero" class="logo" aria-label="Home">AM</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="main-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#about"    class="nav-link">About</a></li>
+          <li><a href="#skills"   class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact"  class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-eyebrow reveal">Full-Stack Developer</p>
+          <h1 class="hero-name reveal">Alex<br />Mercer</h1>
+          <p class="hero-tagline reveal">I craft fast, accessible, and beautiful web experiences — from pixel-perfect UIs to scalable back-end systems.</p>
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact"  class="btn btn-ghost">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="hero-card">
+            <div class="hero-card-inner">
+              <div class="code-block">
+                <span class="line"><span class="kw">const</span> <span class="id">developer</span> <span class="op">=</span> {</span>
+                <span class="line indent"><span class="str">name</span>: <span class="val">"Alex Mercer"</span>,</span>
+                <span class="line indent"><span class="str">role</span>: <span class="val">"Full-Stack Dev"</span>,</span>
+                <span class="line indent"><span class="str">passion</span>: <span class="val">"Clean Code"</span>,</span>
+                <span class="line indent"><span class="str">available</span>: <span class="bool">true</span></span>
+                <span class="line">};</span>
+                <span class="line">&nbsp;</span>
+                <span class="line"><span class="id">developer</span>.<span class="fn">build</span>(<span class="val">"something great"</span>);</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-blob blob-1"></div>
+          <div class="hero-blob blob-2"></div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll to about">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-image-wrap reveal">
+          <div class="about-image">
+            <img
+              src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Alex Mercer — developer portrait"
+              width="480" height="560"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-tag tag-exp">5+ yrs exp</div>
+          <div class="about-tag tag-proj">40+ projects</div>
+        </div>
+        <div class="about-content reveal">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">Building with intention &amp; craft</h2>
+          <p>I'm a full-stack developer based in San Francisco, passionate about turning complex problems into elegant, user-first solutions. I believe great software lives at the intersection of thoughtful engineering and empathetic design.</p>
+          <p>When I'm not coding, I'm contributing to open-source projects, writing technical articles, or hiking the trails around the Bay Area.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num" data-target="5">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="40">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Projects Shipped</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="12">0</span><span class="stat-suffix"></span>
+              <span class="stat-label">Open Source Repos</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Work with me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Expertise</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-subtitle">A curated set of tools I rely on to build robust, production-grade applications.</p>
+        </div>
+        <div class="skills-grid">
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <h3>Front-End</h3>
+            <p>Semantic HTML5, modern CSS3, vanilla JS, accessibility-first component architecture.</p>
+            <ul class="tag-list">
+              <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>TypeScript</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+            </div>
+            <h3>Back-End</h3>
+            <p>RESTful APIs, GraphQL, authentication flows, and scalable database architecture.</p>
+            <ul class="tag-list">
+              <li>Node.js</li><li>Python</li><li>PostgreSQL</li><li>Redis</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            </div>
+            <h3>DevOps</h3>
+            <p>Container orchestration, CI/CD pipelines, infrastructure-as-code, and cloud deployments.</p>
+            <ul class="tag-list">
+              <li>Docker</li><li>AWS</li><li>GitHub Actions</li><li>Terraform</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Frameworks</h3>
+            <p>Fast, idiomatic development across modern full-stack frameworks and meta-frameworks.</p>
+            <ul class="tag-list">
+              <li>React</li><li>Next.js</li><li>Express</li><li>Fastify</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16v16H4z"/><path d="M8 4v16M16 4v16M4 8h16M4 16h16"/></svg>
+            </div>
+            <h3>Databases</h3>
+            <p>Relational and document databases, query optimization, and data modeling patterns.</p>
+            <ul class="tag-list">
+              <li>PostgreSQL</li><li>MongoDB</li><li>Supabase</li><li>SQLite</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3"/></svg>
+            </div>
+            <h3>Testing</h3>
+            <p>Unit, integration, and end-to-end testing strategies to ship with confidence.</p>
+            <ul class="tag-list">
+              <li>Vitest</li><li>Playwright</li><li>Jest</li><li>Testing Library</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Work</span>
+          <h2 class="section-title">Selected Projects</h2>
+          <p class="section-subtitle">A handful of things I've built — from personal experiments to production products.</p>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Project filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="api">API</button>
+          <button class="filter-btn" data-filter="tool">Tool</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+
+          <article class="project-card reveal" data-category="web">
+            <div class="project-image">
+              <img
+                src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=700"
+                alt="Dashboard UI preview"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="btn btn-sm">Live Demo</a>
+                <a href="#" class="btn btn-sm btn-ghost">GitHub</a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-tag">Web</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="project-title">Analytics Dashboard</h3>
+              <p>A real-time analytics platform with customizable widgets, dark mode, and CSV export — built with vanilla JS and a Node.js WebSocket back-end.</p>
+              <ul class="project-stack">
+                <li>JavaScript</li><li>Node.js</li><li>WebSockets</li><li>PostgreSQL</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="api">
+            <div class="project-image">
+              <img
+                src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=700"
+                alt="API service preview"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="btn btn-sm">Live Demo</a>
+                <a href="#" class="btn btn-sm btn-ghost">GitHub</a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-tag">API</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="project-title">REST API Gateway</h3>
+              <p>A high-performance API gateway with rate limiting, JWT auth, request validation, and automatic OpenAPI documentation generation.</p>
+              <ul class="project-stack">
+                <li>Node.js</li><li>Fastify</li><li>Redis</li><li>Docker</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="tool">
+            <div class="project-image">
+              <img
+                src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=700"
+                alt="CLI tool preview"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="btn btn-sm">Live Demo</a>
+                <a href="#" class="btn btn-sm btn-ghost">GitHub</a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-tag">Tool</span>
+                <span class="project-year">2023</span>
+              </div>
+              <h3 class="project-title">Dev CLI Toolkit</h3>
+              <p>A developer CLI with scaffolding commands, environment management, and automated deployment scripts used daily by 200+ engineers.</p>
+              <ul class="project-stack">
+                <li>Node.js</li><li>Commander</li><li>Shell</li><li>GitHub Actions</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="web">
+            <div class="project-image">
+              <img
+                src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=700"
+                alt="Collaboration platform preview"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="btn btn-sm">Live Demo</a>
+                <a href="#" class="btn btn-sm btn-ghost">GitHub</a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-tag">Web</span>
+                <span class="project-year">2023</span>
+              </div>
+              <h3 class="project-title">Team Collab Platform</h3>
+              <p>A real-time document collaboration tool with operational transformation, presence indicators, and role-based access control.</p>
+              <ul class="project-stack">
+                <li>TypeScript</li><li>Express</li><li>Socket.io</li><li>MongoDB</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="api">
+            <div class="project-image">
+              <img
+                src="https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&w=700"
+                alt="GraphQL service preview"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="btn btn-sm">Live Demo</a>
+                <a href="#" class="btn btn-sm btn-ghost">GitHub</a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-tag">API</span>
+                <span class="project-year">2023</span>
+              </div>
+              <h3 class="project-title">GraphQL Data Layer</h3>
+              <p>A federated GraphQL supergraph unifying four microservices with DataLoader batching, persisted queries, and schema stitching.</p>
+              <ul class="project-stack">
+                <li>GraphQL</li><li>Apollo</li><li>PostgreSQL</li><li>Redis</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="tool">
+            <div class="project-image">
+              <img
+                src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=700"
+                alt="Performance profiler preview"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="btn btn-sm">Live Demo</a>
+                <a href="#" class="btn btn-sm btn-ghost">GitHub</a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-tag">Tool</span>
+                <span class="project-year">2022</span>
+              </div>
+              <h3 class="project-title">Node.js Profiler</h3>
+              <p>A lightweight performance profiler that captures CPU flamegraphs and memory snapshots with minimal overhead in production environments.</p>
+              <ul class="project-stack">
+                <li>Node.js</li><li>V8</li><li>C++</li><li>WebAssembly</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <span class="section-label">Contact</span>
+          <h2 class="section-title">Let's build something together</h2>
+          <p>I'm currently open to freelance work and full-time opportunities. Have a project in mind? Drop me a message and I'll get back to you within 24 hours.</p>
+          <ul class="contact-links">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:alex@example.com">alex@example.com</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <a href="#" target="_blank" rel="noopener noreferrer">linkedin.com/in/alexmercer</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              <a href="#" target="_blank" rel="noopener noreferrer">github.com/alexmercer</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required />
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email" required />
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project inquiry" required />
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+              <span class="btn-label">Send Message</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <div class="form-success" id="form-success" hidden>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Message sent! I'll be in touch soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="footer-copy">&copy; <span id="year"></span> Alex Mercer. All rights reserved.</span>
+      <div class="footer-socials">
+        <a href="#" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="#" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
